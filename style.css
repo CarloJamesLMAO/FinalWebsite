@@ -1,0 +1,1421 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212; /* Dark background for a modern techy feel */
+    color: #e0e0e0; /* Light text color for contrast */
+}
+
+/* Header Styles */
+header {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff9800;
+    border-bottom: 2px solid #ff9800;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    margin: 80px 20px 20px; /* Adjust top margin to account for fixed header */
+    z-index: 5;
+    position: relative;
+}
+
+/* Sidebar Styles */
+aside {
+    width: 200px;
+    background-color: #1f1f1f;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 5;
+    border-radius: 8px; /* Rounded corners for modern look */
+}
+
+aside .sidebar h2 {
+    margin-top: 0;
+    color: #e0e0e0;
+}
+
+aside .sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside .sidebar ul li {
+    margin: 10px 0;
+}
+
+aside .sidebar ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color 0.3s;
+}
+
+aside .sidebar ul li a:hover {
+    color: #ff9800;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 20px;
+    background: #1e1e1e; /* Dark background for contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Welcome Section Styles */
+.welcome {
+    text-align: center;
+    background: #2a2a2a; /* Darker background for the section */
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome h1 {
+    font-size: 3em;
+    color: #ff9800;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+.welcome p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.welcome h2 {
+    font-size: 2em;
+    color: #ff9800;
+    margin-top: 20px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+/* Gallery Section Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.gallery .image-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    text-align: center;
+    border-radius: 12px; /* Rounded corners for images */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Box shadow for depth */
+    background: #1e1e1e; /* Dark background for contrast */
+}
+
+.gallery .image-item img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery .image-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+.gallery .image-item p {
+    font-size: 1em;
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+
+/* Lorem Section Styles */
+.lorem {
+    margin-top: 20px;
+}
+
+.lorem h2 {
+    font-size: 2em;
+    color: #ff9800;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+.lorem p {
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+footer .footer-logo img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
+/* Services Page Specific Styles */
+.services .service-list {
+    /* Add specific styles for the services page list */
+}
+
+/* Responsive Styles for Services Page */
+@media (max-width: 768px) {
+    .services .service-list {
+        padding: 20px;
+    }
+
+    .services .service-list h1 {
+        font-size: 2.5em;
+    }
+
+    .services .service-list p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .services .service-list h1 {
+        font-size: 1.8em;
+    }
+
+    .services .service-list p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* About Page Styles */
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff9800;
+    border-bottom: 2px solid #ff9800;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    margin: 80px 20px 20px; /* Adjust top margin to account for fixed header */
+    z-index: 5;
+    position: relative;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Section Styles */
+.about-us {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #1e1e1e, #2e2e2e);
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+}
+
+.about-content h1 {
+    font-size: 3em;
+    color: #ff9800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content h2 {
+    font-size: 2em;
+    color: #e0e0e0;
+    margin-top: 20px;
+    border-bottom: 2px solid #ff9800; /* Underline effect for headings */
+    padding-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    color: #d0d0d0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+footer .footer-logo img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ff9800;
+}
+/* Services Page Specific Styles */
+.services .service-list {
+    /* Add specific styles for the services page list */
+}
+
+/* Responsive Styles for Services Page */
+@media (max-width: 768px) {
+    .services .service-list {
+        padding: 20px;
+    }
+
+    .services .service-list h1 {
+        font-size: 2.5em;
+    }
+
+    .services .service-list p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .services .service-list h1 {
+        font-size: 1.8em;
+    }
+
+    .services .service-list p {
+        font-size: 0.9em;
+    }
+}
+
+/* General Service Item Styles */
+.service-item {
+    background: #2c2c2c; /* Dark background for contrast */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    overflow: hidden;
+    flex: 1 1 22%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    padding: 20px;
+    margin: 15px; /* Added margin for spacing */
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 8px; /* Rounded corners for images */
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.service-item img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    opacity: 0.9; /* Slight opacity change */
+}
+
+.service-item h2 {
+    font-size: 1.8em;
+    color: #f1f1f1; /* Light text color for contrast */
+    margin: 15px 0 10px;
+    font-weight: 600;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #e0e0e0; /* Slightly lighter text color for better readability */
+    padding: 0 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .service-item {
+        flex: 1 1 45%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        flex: 1 1 100%; /* Full width on very small screens */
+    }
+}
+
+/* Services Intro Styles */
+.services-intro {
+    background: linear-gradient(135deg, #000428, #004e92); /* Dark gradient for a techy feel */
+    color: #f5f5f5; /* Light text color for contrast */
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px; /* Spacing from other sections */
+}
+
+.services-intro h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #f5f5f5;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.services-intro p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #d0d0d0;
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Decorative Elements */
+.services-intro::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 20%, transparent 60%);
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.services-intro::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('abstract-tech-pattern.png') center/cover no-repeat; /* Tech pattern for extra texture */
+    opacity: 0.1;
+    z-index: 0;
+}
+/* Services Page Specific Styles */
+.services .service-list {
+    /* Add specific styles for the services page list */
+}
+
+/* Responsive Styles for Services Page */
+@media (max-width: 768px) {
+    .services .service-list {
+        padding: 20px;
+    }
+
+    .services .service-list h1 {
+        font-size: 2.5em;
+    }
+
+    .services .service-list p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .services .service-list h1 {
+        font-size: 1.8em;
+    }
+
+    .services .service-list p {
+        font-size: 0.9em;
+    }
+}
+
+/* Gallery Section Styles */
+.gallery-grid {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 30px; /* Increased space between gallery items */
+    margin: 40px 0; /* More margin for top and bottom */
+    padding: 0 20px; /* Padding to prevent edge-to-edge layout */
+}
+
+.gallery-item {
+    width: 90%; /* Wider items to take more screen space */
+    max-width: 800px; /* Maximum width for larger screens */
+    position: relative;
+    overflow: hidden; /* Ensures the image does not overflow */
+    border-radius: 15px; /* More pronounced rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    background: rgba(0, 0, 0, 0.2); /* Slight background overlay for a professional look */
+}
+
+.gallery-item img {
+    width: 100%; /* Make sure image takes up full width of its container */
+    height: 400px; /* Increased height for larger images */
+    object-fit: cover; /* Cover the container without distorting */
+    transition: transform 0.4s, opacity 0.4s; /* Smooth transition for zoom and fade effects */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    opacity: 0.9; /* Slight fade effect on hover */
+}
+
+/* Overlay Text Styling */
+.gallery-item::before {
+    content: "View More"; /* Overlay text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Shadow for better readability */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover::before {
+    opacity: 1; /* Show text on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 100%; /* Full width for smaller screens */
+        max-width: none; /* Remove maximum width restriction */
+    }
+
+    .gallery-item img {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}
+/* General Styles */
+body.contact-page {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e0e0e0;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #212121;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+}
+
+header nav ul li a::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #00b4d8;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 20px 20px; /* Adjust top margin to account for fixed header */
+    z-index: 5;
+    position: relative;
+}
+
+/* Contact Header Styles */
+.contact-header {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #00b4d8, #006d77);
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.contact-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 1.2em;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-info .contact-details {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-info .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-info .contact-item i {
+    font-size: 1.7em;
+    color: #00b4d8;
+    margin-right: 15px;
+}
+
+.contact-info .contact-item p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.contact-info .contact-item a {
+    color: #00b4d8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info .contact-item a:hover {
+    color: #004d40;
+}
+
+.contact-map {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+/* Gallery Page Specific Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.gallery .image-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    text-align: center;
+    border-radius: 12px; /* Rounded corners for images */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Box shadow for depth */
+    background: #1e1e1e; /* Dark background for contrast */
+}
+
+.gallery .image-item img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery .image-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+.gallery .image-item p {
+    font-size: 1em;
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+
+/* Responsive Styles for Gallery Page */
+@media (max-width: 768px) {
+    .gallery .image-item {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery .image-item {
+        flex: 1 1 100%;
+    }
+
+    .gallery .image-item p {
+        font-size: 0.9em;
+    }
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 1em;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00b4d8;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #00b4d8;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #212121;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+footer .footer-logo {
+    margin-bottom: 10px;
+}
+
+footer .footer-logo img {
+    height: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ff9800;
+}
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212; /* Dark background for a modern techy feel */
+    color: #e0e0e0; /* Light text color for contrast */
+}
+
+/* Header Styles */
+header {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff9800;
+    border-bottom: 2px solid #ff9800;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    margin: 80px 20px 20px; /* Adjust top margin to account for fixed header */
+    z-index: 5;
+    position: relative;
+}
+
+/* Sidebar Styles */
+aside {
+    width: 250px; /* Adjust width as needed */
+    background-color: #1f1f1f;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 80px; /* Adjust to account for fixed header height */
+    left: 20px;
+    height: calc(100vh - 80px); /* Full viewport height minus header height */
+    border-radius: 8px; /* Rounded corners for modern look */
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+    z-index: 5;
+}
+
+aside .sidebar h2 {
+    margin-top: 0;
+    color: #e0e0e0;
+    font-size: 1.5em;
+    border-bottom: 2px solid #ff9800; /* Accent line under heading */
+    padding-bottom: 10px;
+}
+
+aside .sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside .sidebar ul li {
+    margin: 10px 0;
+}
+
+aside .sidebar ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color 0.3s;
+    font-size: 1.1em; /* Slightly larger text for better readability */
+}
+
+aside .sidebar ul li a:hover {
+    color: #ff9800;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 20px;
+    margin-left: 270px; /* Adjust margin-left to avoid overlap with sidebar */
+    background: #1e1e1e; /* Dark background for contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Careers Section Styles */
+main section {
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #333 0%, #1a1a1a 100%); /* Subtle gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+}
+
+main section h1 {
+    font-size: 2.5em;
+    color: #ff9800;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+main section p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+footer .footer-logo img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ff9800;
+}
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212; /* Dark background for a modern techy feel */
+    color: #e0e0e0; /* Light text color for contrast */
+}
+
+/* Header Styles */
+header {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff9800;
+    border-bottom: 2px solid #ff9800;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    margin: 80px 20px 20px; /* Adjust top margin to account for fixed header */
+    z-index: 5;
+    position: relative;
+}
+
+/* Sidebar Styles */
+aside {
+    width: 250px; /* Increase width if needed */
+    background-color: #1f1f1f;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 80px; /* Adjust to account for fixed header height */
+    left: 20px;
+    height: calc(100vh - 80px); /* Full viewport height minus header height */
+    border-radius: 8px; /* Rounded corners for modern look */
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+    z-index: 5;
+}
+
+aside .sidebar h2 {
+    margin-top: 0;
+    color: #e0e0e0;
+}
+
+aside .sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside .sidebar ul li {
+    margin: 10px 0;
+}
+
+aside .sidebar ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color 0.3s;
+}
+
+aside .sidebar ul li a:hover {
+    color: #ff9800;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 20px;
+    margin-left: 270px; /* Adjust margin-left to avoid overlap with sidebar */
+    background: #1e1e1e; /* Dark background for contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Intro Section Styles */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    color: #ff9800;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Success Stories Section Styles */
+.success-stories {
+    margin-bottom: 40px;
+}
+
+.success-stories h2 {
+    font-size: 2em;
+    color: #ff9800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.story {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.story h3 {
+    font-size: 1.8em;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.story p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    margin-bottom: 40px;
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    color: #ff9800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonials blockquote {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.testimonials blockquote p {
+    margin: 0;
+}
+
+.testimonials blockquote::before {
+    content: '“';
+    font-size: 2em;
+    color: #ff9800;
+}
+
+.testimonials blockquote::after {
+    content: '”';
+    font-size: 2em;
+    color: #ff9800;
+    float: right;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+footer .footer-logo {
+    margin-bottom: 10px;
+}
+
+footer .footer-logo img {
+    height: 60px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #ff9800;
+}
+/* Contact Page Specific Styles */
+.contact .contact-form {
+    /* Add specific styles for the contact form */
+}
+
+/* Responsive Styles for Contact Page */
+@media (max-width: 768px) {
+    .contact .contact-form {
+        padding: 20px;
+    }
+
+    .contact .contact-form h1 {
+        font-size: 2.5em;
+    }
+
+    .contact .contact-form p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact .contact-form h1 {
+        font-size: 1.8em;
+    }
+
+    .contact .contact-form p {
+        font-size: 0.9em;
+    }
+
+    .contact .contact-form input,
+    .contact .contact-form textarea {
+        width: 100%;
+    }
+}
+
